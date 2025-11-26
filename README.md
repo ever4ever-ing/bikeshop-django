@@ -349,3 +349,13 @@ Talento Digital - Módulo 7
 ## Licencia
 
 Este proyecto es con fines educativos.
+
+# Deploy comands
+
+build command:
+
+pip install -r requirements.txt && python manage.py collectstatic --noinput
+
+start command:
+
+python manage.py migrate --noinput && gunicorn bikeshop.wsgi:application --bind 0.0.0.0:$PORT

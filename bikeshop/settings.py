@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'bikeshop.wsgi.application'
 
 #mysql://root:VVylFoaBvdjYuheJJtKqKjlCfeMWEJUv@trolley.proxy.rlwy.net:57818/railway
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ['https://trolley.proxy.rlwy.net']
+CSRF_TRUSTED_ORIGINS = ['https://trolley.proxy.rlwy.net'] #permitir solicitudes desde este dominio
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
