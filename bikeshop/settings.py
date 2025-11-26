@@ -78,14 +78,16 @@ WSGI_APPLICATION = 'bikeshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+#mysql://root:VVylFoaBvdjYuheJJtKqKjlCfeMWEJUv@trolley.proxy.rlwy.net:57818/railway
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bikeshop_bd',
+        'NAME': 'railway',
         'USER': 'root',          # Tu usuario de MySQL
-        'PASSWORD': 'password',  # Tu contraseña de MySQL
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'PASSWORD': 'VVylFoaBvdjYuheJJtKqKjlCfeMWEJUv',  # Tu contraseña de MySQL
+        'HOST': 'trolley.proxy.rlwy.net',
+        'PORT': '57818',
     }
 }
 
