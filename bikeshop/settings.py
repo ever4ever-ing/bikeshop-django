@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'bikeshop.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 #mysql://root:VVylFoaBvdjYuheJJtKqKjlCfeMWEJUv@trolley.proxy.rlwy.net:57818/railway
-
+ALLOWED_HOSTS = ["*"]
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
